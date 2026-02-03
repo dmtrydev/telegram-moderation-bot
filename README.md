@@ -171,7 +171,7 @@ MIT
 
 ### Author
 
-[Дмитрий](https://github.com/dmtrydev)
+[Dmitry](https://github.com/dmtrydev)
 
 ---
 
