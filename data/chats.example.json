@@ -1,0 +1,10 @@
+{
+  "chats": {
+    "-1001234567890": {
+      "chatId": -1001234567890,
+      "captchaEnabled": true,
+      "linksFilterEnabled": true,
+      "updatedAt": 0
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "telegram-moderation-bot",
+  "version": "1.0.0",
+  "description": "Telegram moderation bot with captcha, antiflood, link and stopword filters",
+  "main": "dist/bot.js",
+  "scripts": {
+    "dev": "tsx watch src/bot.ts",
+    "build": "tsc",
+    "start": "node dist/bot.js"
+  },
+  "keywords": ["telegram", "bot", "moderation", "grammy"],
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "grammy": "^1.21.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsx": "^4.6.2",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
