@@ -28,7 +28,7 @@
    
    Или если репозиторий уже создан на GitHub:
    ```bash
-   git remote add origin https://github.com/yourusername/telegram-moderation-bot.git
+   git remote add origin https://github.com/dmtrydev/telegram-moderation-bot.git
    git push -u origin main
    ```
 
@@ -45,11 +45,9 @@
 2. **Подключи remote и запушь:**
    ```bash
    cd d:\work\dmtryxyz\telegram-moderation-bot
-   git remote add origin https://github.com/yourusername/telegram-moderation-bot.git
+   git remote add origin https://github.com/dmtrydev/telegram-moderation-bot.git
    git push -u origin main
    ```
-   
-   Замени `yourusername` на свой GitHub username.
 
 ### 3. Создать Issues для roadmap
 
