@@ -1,37 +1,72 @@
 # Деплой на GitHub
 
-## После клонирования / подготовка к первому пушу
+## ✅ Уже выполнено
 
-### 1. Инициализация и первый коммит
+- ✅ Git установлен и настроен
+- ✅ Репозиторий инициализирован
+- ✅ Первый коммит создан: `996550d`
+- ✅ Ветка переименована в `main`
+- ✅ GitHub CLI установлен
 
-```bash
-git init
-git add .
-git commit -m "Initial commit: Basic moderation bot with captcha, antiflood and filters"
-```
+## 📋 Что осталось сделать
 
-### 2. Создать репозиторий на GitHub
+### Вариант 1: Через GitHub CLI (рекомендуется)
 
-- Зайди на https://github.com/new
-- Имя: `telegram-moderation-bot`
-- Не добавляй README, .gitignore, LICENSE (уже есть локально)
+1. **Авторизуйся в GitHub:**
+   ```bash
+   gh auth login
+   ```
+   - Выбери `GitHub.com`
+   - Выбери `HTTPS` или `SSH`
+   - Следуй инструкциям (откроется браузер для авторизации)
 
-### 3. Подключить remote и запушить
+2. **Создай репозиторий и запушь:**
+   ```bash
+   cd d:\work\dmtryxyz\telegram-moderation-bot
+   gh repo create telegram-moderation-bot --public --source=. --remote=origin --push
+   ```
+   
+   Или если репозиторий уже создан на GitHub:
+   ```bash
+   git remote add origin https://github.com/yourusername/telegram-moderation-bot.git
+   git push -u origin main
+   ```
 
-```bash
-git remote add origin https://github.com/yourusername/telegram-moderation-bot.git
-git branch -M main
-git push -u origin main
-```
+### Вариант 2: Вручную через веб-интерфейс
 
-Замени `yourusername` на свой GitHub username.
+1. **Создай репозиторий на GitHub:**
+   - Зайди на https://github.com/new
+   - Имя: `telegram-moderation-bot`
+   - Описание: "Telegram moderation bot with captcha, antiflood and filters"
+   - Выбери `Public` или `Private`
+   - **НЕ** добавляй README, .gitignore, LICENSE (уже есть локально)
+   - Нажми `Create repository`
 
-### 4. Создать Issues для roadmap
+2. **Подключи remote и запушь:**
+   ```bash
+   cd d:\work\dmtryxyz\telegram-moderation-bot
+   git remote add origin https://github.com/yourusername/telegram-moderation-bot.git
+   git push -u origin main
+   ```
+   
+   Замени `yourusername` на свой GitHub username.
 
-В репозитории: **Issues** → **New issue**:
+### 3. Создать Issues для roadmap
 
-- **#1:** Title: `Add punishment escalation system` — описание: система эскалации (например, 3 страйка → бан).
-- **#2:** Title: `Implement logging to separate channel` — описание: расширить логирование в отдельный канал/чат.
-- **#3:** Title: `Add moderation statistics` — описание: статистика действий модерации (муты, кики, удаления).
+После пуша зайди в репозиторий на GitHub → **Issues** → **New issue**:
 
-После этого проект готов к публикации и контрибьютам.
+**Issue #1:**
+- Title: `Add punishment escalation system`
+- Description: Реализовать систему эскалации наказаний (например, 3 страйка → бан)
+
+**Issue #2:**
+- Title: `Implement logging to separate channel`
+- Description: Расширить систему логирования для отправки в отдельный канал/чат
+
+**Issue #3:**
+- Title: `Add moderation statistics`
+- Description: Добавить статистику действий модерации (муты, кики, удаления сообщений)
+
+## 🎉 Готово!
+
+После выполнения всех шагов проект будет доступен на GitHub и готов к контрибьютам.
